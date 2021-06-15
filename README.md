@@ -1,4 +1,4 @@
-![Logo](https://ipfs.io/ipfs/QmcV456pK3oWDyHnn1SB6zmkmgDyMCRSoSewepFRTbvz1S?filename=sign.png)
+![Logo](https://ipfs.io/ipfs/QmbV9PXkZGq7kKdS7xh2jR2wSddBq492besbAXFu1emX3B?filename=blockchain.png)
 
 # Server Signed Transactions
 Server signed blockchain transactions utilizing web3.js - Ethereum JavaScript API
