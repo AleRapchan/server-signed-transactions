@@ -1,18 +1,18 @@
-![Logo](https://ipfs.io/ipfs/QmbV9PXkZGq7kKdS7xh2jR2wSddBq492besbAXFu1emX3B?filename=blockchain.png)
-
 # Server Signed Transactions
 Server signed blockchain transactions utilizing web3.js - Ethereum JavaScript API
+
+![Logo](https://alexandrebarros.com/global/server-signed.png)
 
 ## Goals
 
 A system that sign transactions in the server side, without needing to use apps like Metamask for it.
 
-- When to server sign
-- Create express app
-- Connect to web3
-- Get contract object
-- Create transaction
-- Sign and send
+- [X] When to server sign
+- [X] Create express app
+- [X] Connect to web3
+- [X] Get contract object
+- [X] Create transaction
+- [X] Sign and send
 
 ## Problem
 When to server sign:
@@ -58,7 +58,7 @@ http://localhost:3000/
 npm install web3
 ```
 - Add to app.js
-```bash
+```js
 const Web3 = require('web3');
 var Tx = require('ethereumjs-tx').Transaction;
 const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
@@ -66,14 +66,14 @@ web3.eth.getAccounts(console.log);
 ```
 ### Get contract object
 - Need the contract address and ABI - add to app.js
-```bash
+```js
 const contractAddress = 'YOUR_CONTRACT_ADD';
 const ABI = require('YOUR_ABI_FILE');
 var TestContract = web3.eth.contract([YOUR_ABI], contractAddress);
 ```
 ### Create transaction
 Need the contract address, ABI, account, private key and nonce
-```bash
+```js
 const contractAddress = 'YOUR_CONTRACT_ADD';
 const ABI = require('YOUR_ABI_FILE');
 const account = '0xACCOUNT_ADDRESS';
@@ -93,7 +93,7 @@ data: _data }
 ```
 ### Sign and send
 - Sign the transaction
-```bash
+```js
 var tx = new Tx(rawTx);
      tx.sign(privateKey);
      var serializedTx = tx.serialize();
