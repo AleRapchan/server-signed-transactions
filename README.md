@@ -1,7 +1,7 @@
 # Server Signed Transactions
 Server signed blockchain transactions utilizing web3.js - Ethereum JavaScript API
 
-![Logo](https://alexandrebarros.com/global/server-signed.png)
+![Logo](https://alexandrebarros.com/global/serverside-signed.png)
 
 ## Goals
 
